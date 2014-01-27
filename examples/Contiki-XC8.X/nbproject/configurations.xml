@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="contiki-2.7" displayName="contiki-2.7" projectFiles="true">
+      <logicalFolder name="apps" displayName="apps" projectFiles="true">
+        <logicalFolder name="webserver" displayName="webserver" projectFiles="true">
+          <itemPath>../../../contiki-2.7/apps/webserver/http-strings.c</itemPath>
+          <itemPath>../../../contiki-2.7/apps/webserver/http-strings.h</itemPath>
+          <itemPath>../../../contiki-2.7/apps/webserver/httpd-cgi.c</itemPath>
+          <itemPath>../../../contiki-2.7/apps/webserver/httpd-cgi.h</itemPath>
+          <itemPath>../../../contiki-2.7/apps/webserver/httpd-fs.c</itemPath>
+          <itemPath>../../../contiki-2.7/apps/webserver/httpd-fs.h</itemPath>
+          <itemPath>../../../contiki-2.7/apps/webserver/httpd-fsdata.h</itemPath>
+          <itemPath>../../../contiki-2.7/apps/webserver/httpd.c</itemPath>
+          <itemPath>../../../contiki-2.7/apps/webserver/httpd.h</itemPath>
+          <itemPath>../../../contiki-2.7/apps/webserver/webserver-dsc.c</itemPath>
+          <itemPath>../../../contiki-2.7/apps/webserver/webserver-nogui.c</itemPath>
+          <itemPath>../../../contiki-2.7/apps/webserver/webserver-nogui.h</itemPath>
+          <itemPath>../../../contiki-2.7/apps/webserver/webserver.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="core" displayName="core" projectFiles="true">
+        <logicalFolder name="cfs" displayName="cfs" projectFiles="true">
+          <itemPath>../../../contiki-2.7/core/cfs/cfs.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="dev" displayName="dev" projectFiles="true">
+          <itemPath>../../../contiki-2.7/core/dev/eeprom.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/dev/leds.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/dev/leds.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/dev/nullradio.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/dev/nullradio.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/dev/radio-sensor.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/dev/radio.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/dev/watchdog.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lib" displayName="lib" projectFiles="true">
+          <itemPath>../../../contiki-2.7/core/lib/assert.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/checkpoint.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/checkpoint.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/crc16.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/ifft.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/ifft.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/list.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/list.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/memb.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/memb.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/mmem.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/mmem.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/petsciiconv.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/print-stats.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/print-stats.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/random.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/random.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/ringbuf.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/ringbuf.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/sensors.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/settings.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/settings.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/trickle-timer.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/lib/trickle-timer.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="net" displayName="net" projectFiles="true">
+          <logicalFolder name="rime" displayName="rime" projectFiles="true">
+            <itemPath>../../../contiki-2.7/core/net/rime/abc.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/abc.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/announcement.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/announcement.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/broadcast-announcement.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/broadcast-announcement.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/broadcast.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/broadcast.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/chameleon-bitopt.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/chameleon-raw.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/chameleon.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/chameleon.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/channel.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/channel.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/collect-link-estimate.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/collect-link-estimate.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/collect-neighbor.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/collect-neighbor.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/collect.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/collect.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/ipolite.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/ipolite.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/mesh.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/mesh.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/multihop.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/multihop.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/neighbor-discovery.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/neighbor-discovery.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/netflood.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/netflood.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/polite-announcement.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/polite-announcement.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/polite.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/polite.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/rime.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/rimeaddr.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/rimeaddr.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/rimestats.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/rimestats.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/rmh.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/rmh.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/route-discovery.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/route-discovery.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/route.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/route.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/rucb.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/rucb.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/rudolph0.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/rudolph0.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/rudolph1.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/rudolph1.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/rudolph2.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/rudolph2.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/runicast.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/runicast.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/stbroadcast.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/stbroadcast.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/stunicast.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/stunicast.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/timesynch.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/timesynch.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/trickle.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/trickle.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/unicast.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rime/unicast.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="rpl" displayName="rpl" projectFiles="true">
+            <itemPath>../../../contiki-2.7/core/net/rpl/rpl-conf.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rpl/rpl-dag.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rpl/rpl-ext-header.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rpl/rpl-icmp6.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rpl/rpl-mrhof.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rpl/rpl-private.h</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rpl/rpl-timers.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rpl/rpl.c</itemPath>
+            <itemPath>../../../contiki-2.7/core/net/rpl/rpl.h</itemPath>
+          </logicalFolder>
+          <itemPath>../../../contiki-2.7/core/net/dhcpc.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/dhcpc.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/hc.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/hc.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/nbr-table.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/nbr-table.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/netstack.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/netstack.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/packetbuf.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/packetbuf.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/packetqueue.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/packetqueue.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/psock.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/psock.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/queuebuf.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/queuebuf.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/resolv.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/resolv.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/rime.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/sicslowpan.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/sicslowpan.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/simple-udp.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/simple-udp.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/tcpdump.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/tcpip.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/tcpip.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uaodv-def.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uaodv-rt.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uaodv-rt.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uaodv.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-debug.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-debug.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-ds6-nbr.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-ds6-nbr.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-ds6-route.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-ds6-route.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-ds6.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-ds6.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-fw-drv.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-fw.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-fw.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-icmp6.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-icmp6.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-nd6.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-nd6.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-neighbor.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-neighbor.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-over-mesh.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-over-mesh.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-packetqueue.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-packetqueue.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-split.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-split.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-udp-packet.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip-udp-packet.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip6.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip_arch.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip_arp.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uip_arp.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uiplib.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uiplib.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/net/uipopt.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="sys" displayName="sys" projectFiles="true">
+          <itemPath>../../../contiki-2.7/core/sys/arg.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/cc.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/clock.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/compower.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/compower.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/ctimer.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/ctimer.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/dsc.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/energest.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/energest.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/etimer.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/etimer.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/lc-switch.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/lc.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/log.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/mt.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/mt.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/process.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/process.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/procinit.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/procinit.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/profile.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/pt.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/rtimer.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/rtimer.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/stimer.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/stimer.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/timer.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/timer.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/timetable-aggregate.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/timetable-aggregate.h</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/timetable.c</itemPath>
+          <itemPath>../../../contiki-2.7/core/sys/timetable.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="f2" displayName="contiki-2.7-mplabx" projectFiles="true">
+      <logicalFolder name="f1" displayName="cpu" projectFiles="true">
+        <logicalFolder name="microchip-mplabx"
+                       displayName="microchip-mplabx"
+                       projectFiles="true">
+          <logicalFolder name="MicrochipAL" displayName="MicrochipAL" projectFiles="true">
+            <logicalFolder name="Microchip" displayName="Microchip" projectFiles="true">
+              <logicalFolder name="Include" displayName="Include" projectFiles="true">
+                <itemPath>../../cpu/microchip-mplabx/MicrochipAL/Microchip/Include/Compiler.h</itemPath>
+                <itemPath>../../cpu/microchip-mplabx/MicrochipAL/Microchip/Include/stdlib.h</itemPath>
+                <itemPath>../../cpu/microchip-mplabx/MicrochipAL/Microchip/Include/pic18.h</itemPath>
+                <itemPath>../../cpu/microchip-mplabx/MicrochipAL/Microchip/Include/GenericTypeDefs.h</itemPath>
+                <itemPath>../../cpu/microchip-mplabx/MicrochipAL/Microchip/Include/trace18.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="xc8" displayName="xc8" projectFiles="true">
+            <logicalFolder name="dev" displayName="dev" projectFiles="true">
+              <itemPath>../../cpu/microchip-mplabx/xc8/dev/eeprom.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lib" displayName="lib" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="sys" displayName="sys" projectFiles="true">
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="platform" projectFiles="true">
+        <logicalFolder name="pic18f97j60-family"
+                       displayName="pic18f97j60-family"
+                       projectFiles="true">
+          <logicalFolder name="net" displayName="net" projectFiles="true">
+            <itemPath>../../platform/pic18f97j60-family/net/MAC.h</itemPath>
+            <itemPath>../../platform/pic18f97j60-family/net/ethernet-drv.h</itemPath>
+            <itemPath>../../platform/pic18f97j60-family/net/Helpers.c</itemPath>
+            <itemPath>../../platform/pic18f97j60-family/net/ETH97J60.h</itemPath>
+            <itemPath>../../platform/pic18f97j60-family/net/Helpers.h</itemPath>
+            <itemPath>../../platform/pic18f97j60-family/net/ethernet.c</itemPath>
+            <itemPath>../../platform/pic18f97j60-family/net/ethernet-v6.c</itemPath>
+            <itemPath>../../platform/pic18f97j60-family/net/StackTsk.h</itemPath>
+            <itemPath>../../platform/pic18f97j60-family/net/uipopt.h</itemPath>
+            <itemPath>../../platform/pic18f97j60-family/net/ethernet.h</itemPath>
+            <itemPath>../../platform/pic18f97j60-family/net/ETH97J60.c</itemPath>
+            <itemPath>../../platform/pic18f97j60-family/net/ethernet-drv.c</itemPath>
+            <itemPath>../../platform/pic18f97j60-family/net/ethernet-v6.h</itemPath>
+          </logicalFolder>
+          <itemPath>../../platform/pic18f97j60-family/HardwareProfile.h</itemPath>
+          <itemPath>../../platform/pic18f97j60-family/rtimer-arch.h</itemPath>
+          <itemPath>../../platform/pic18f97j60-family/contiki-main.c</itemPath>
+          <itemPath>../../platform/pic18f97j60-family/clock.c</itemPath>
+          <itemPath>../../platform/pic18f97j60-family/interrupts.c</itemPath>
+          <itemPath>../../platform/pic18f97j60-family/mtarch.h</itemPath>
+          <itemPath>../../platform/pic18f97j60-family/contiki-conf.h</itemPath>
+          <itemPath>../../platform/pic18f97j60-family/configuration-bits.c</itemPath>
+          <itemPath>../../platform/pic18f97j60-family/empty.c</itemPath>
+          <itemPath>../../platform/pic18f97j60-family/rtimer-arch.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="f1" displayName="webserver" projectFiles="true">
+      <logicalFolder name="httpd-cfs" displayName="httpd-cfs" projectFiles="true">
+        <itemPath>../webserver/httpd-cfs/backgrnd.gif</itemPath>
+        <itemPath>../webserver/httpd-cfs/contiki.gif</itemPath>
+        <itemPath>../webserver/httpd-cfs/index.htm</itemPath>
+        <itemPath>../webserver/httpd-cfs/notfound.htm</itemPath>
+      </logicalFolder>
+      <itemPath>../webserver/webserver-example.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../webserver</Elem>
+    <Elem>../../cpu/microchip-mplabx</Elem>
+    <Elem>../../platform/pic18f97j60-family</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="default" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC18F67J60</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>XC8</languageToolchain>
+        <languageToolchainVersion>1.30</languageToolchainVersion>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <HI-TECH-COMP>
+        <property key="asmlist" value="true"/>
+        <property key="define-macros" value=""/>
+        <property key="extra-include-directories"
+                  value=".;../../platform/pic18f97j60-family;../../cpu/microchip-mplabx/xc8;../../cpu/microchip-mplabx/MicrochipAL/Microchip/Include;../../../contiki-2.7/core;../../../contiki-2.7/apps/webserver"/>
+        <property key="identifier-length" value="255"/>
+        <property key="operation-mode" value="free"/>
+        <property key="opt-xc8-compiler-strict_ansi" value="false"/>
+        <property key="optimization-assembler" value="true"/>
+        <property key="optimization-assembler-files" value="true"/>
+        <property key="optimization-debug" value="false"/>
+        <property key="optimization-global" value="true"/>
+        <property key="optimization-level" value="9"/>
+        <property key="optimization-set" value="default"/>
+        <property key="optimization-speed" value="false"/>
+        <property key="preprocess-assembler" value="true"/>
+        <property key="undefine-macros" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="verbose" value="false"/>
+        <property key="warning-level" value="0"/>
+        <property key="what-to-do" value="ignore"/>
+      </HI-TECH-COMP>
+      <HI-TECH-LINK>
+        <property key="additional-options-checksum" value=""/>
+        <property key="additional-options-code-offset" value=""/>
+        <property key="additional-options-command-line" value=""/>
+        <property key="additional-options-errata" value=""/>
+        <property key="additional-options-extend-address" value="false"/>
+        <property key="additional-options-trace-type" value=""/>
+        <property key="additional-options-use-response-files" value="false"/>
+        <property key="backup-reset-condition-flags" value="false"/>
+        <property key="calibrate-oscillator" value="true"/>
+        <property key="calibrate-oscillator-value" value=""/>
+        <property key="clear-bss" value="true"/>
+        <property key="code-model-external" value="wordwrite"/>
+        <property key="code-model-rom" value=""/>
+        <property key="create-html-files" value="false"/>
+        <property key="data-model-ram" value=""/>
+        <property key="data-model-size-of-double" value="24"/>
+        <property key="data-model-size-of-float" value="24"/>
+        <property key="display-class-usage" value="false"/>
+        <property key="display-hex-usage" value="false"/>
+        <property key="display-overall-usage" value="true"/>
+        <property key="display-psect-usage" value="false"/>
+        <property key="fill-flash-options-addr" value=""/>
+        <property key="fill-flash-options-const" value=""/>
+        <property key="fill-flash-options-how" value="0"/>
+        <property key="fill-flash-options-inc-const" value="1"/>
+        <property key="fill-flash-options-increment" value=""/>
+        <property key="fill-flash-options-seq" value=""/>
+        <property key="fill-flash-options-what" value="0"/>
+        <property key="format-hex-file-for-download" value="false"/>
+        <property key="initialize-data" value="true"/>
+        <property key="keep-generated-startup.as" value="false"/>
+        <property key="link-in-c-library" value="true"/>
+        <property key="link-in-peripheral-library" value="true"/>
+        <property key="managed-stack" value="false"/>
+        <property key="opt-xc8-linker-file" value="false"/>
+        <property key="opt-xc8-linker-link_startup" value="false"/>
+        <property key="opt-xc8-linker-serial" value=""/>
+        <property key="program-the-device-with-default-config-words" value="true"/>
+      </HI-TECH-LINK>
+      <RealICEPlatformTool>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="Freeze Peripherals" value="true"/>
+        <property key="RIExTrigs.Five" value="OFF"/>
+        <property key="RIExTrigs.Four" value="OFF"/>
+        <property key="RIExTrigs.One" value="OFF"/>
+        <property key="RIExTrigs.Seven" value="OFF"/>
+        <property key="RIExTrigs.Six" value="OFF"/>
+        <property key="RIExTrigs.Three" value="OFF"/>
+        <property key="RIExTrigs.Two" value="OFF"/>
+        <property key="RIExTrigs.Zero" value="OFF"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="hwtoolclock.frcindebug" value="false"/>
+        <property key="hwtoolclock.instructionspeed" value="4"/>
+        <property key="hwtoolclock.units" value="mips"/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.end" value="0x1fff7"/>
+        <property key="memories.programmemory.start" value="0x0"/>
+        <property key="poweroptions.powerenable" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveprogramrange.end" value="0x1fff7"/>
+        <property key="programoptions.preserveprogramrange.start" value="0x0"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.usehighvoltageonmclr" value="false"/>
+        <property key="programoptions.uselvpprogramming" value="false"/>
+        <property key="tracecontrol.disablemacros" value="false"/>
+        <property key="tracecontrol.functionprofile.summary" value="false"/>
+        <property key="tracecontrol.include.timestamp" value="false"/>
+        <property key="tracecontrol.medium" value="0"/>
+        <property key="tracecontrol.portselect" value="0"/>
+        <property key="tracecontrol.select" value="0"/>
+        <property key="tracecontrol.spiselect" value="0"/>
+        <property key="tracecontrol.stallontracebufferfull" value="false"/>
+        <property key="tracecontrol.tracebufmax" value="546000"/>
+        <property key="tracecontrol.tracefile"
+                  value="/home/jarojuda/Projekty/contiki-2.7-mplabx/project-templates/Contiki-XC8.X/defmplabxtrace.log"/>
+        <property key="tracecontrol.tracefilemax" value="1048510"/>
+        <property key="voltagevalue" value="3.25"/>
+      </RealICEPlatformTool>
+      <XC8-config-global>
+        <property key="advanced-elf" value="true"/>
+        <property key="output-file-format" value="-mcof,+elf"/>
+        <property key="stack-size-high" value="auto"/>
+        <property key="stack-size-low" value="auto"/>
+        <property key="stack-size-main" value="auto"/>
+        <property key="stack-type" value="reentrant"/>
+      </XC8-config-global>
+    </conf>
+  </confs>
+</configurationDescriptor>
