@@ -111,8 +111,3 @@ include nbproject/Makefile-impl.mk
 
 # include project make variables
 include nbproject/Makefile-variables.mk
-
-CONTIKI:=../../../contiki-2.7
-TARGET:=pic18f97j60-family
-
-include $(CONTIKI)/cpu/microchip-mplabx/xc8/Make-Contiki-in-IDE.mk

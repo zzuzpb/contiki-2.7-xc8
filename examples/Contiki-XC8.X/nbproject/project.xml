@@ -3,7 +3,7 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
             <name>Contiki-XC8</name>
-            <creation-uuid>4b76420b-08bc-4ccc-93cc-4bc17ff1a2be</creation-uuid>
+            <creation-uuid>828d2102-3db2-4637-8910-5909287b8c80</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>
             <cpp-extensions/>

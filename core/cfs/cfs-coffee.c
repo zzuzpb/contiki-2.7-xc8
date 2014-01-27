@@ -49,9 +49,9 @@
 #define DEBUG 0
 #if DEBUG
 #include <stdio.h>
-#define PRINTF(...) printf(__VA_ARGS__)
+#define PRINTF(s) printf(s)
 #else
-#define PRINTF(...)
+#define PRINTF(s)
 #endif
 
 #include "contiki-conf.h"
@@ -357,8 +357,8 @@ isolate_pages(coffee_page_t start, coffee_page_t skip_pages)
   for(page = 0; page < skip_pages; page++) {
     write_header(&hdr, start + page);
   }
-  PRINTF("Coffee: Isolated %u pages starting in sector %d\n",
-         (unsigned)skip_pages, (int)start / COFFEE_PAGES_PER_SECTOR);
+  PRINTF(("Coffee: Isolated %u pages starting in sector %d\n",
+         (unsigned)skip_pages, (int)start / COFFEE_PAGES_PER_SECTOR));
 
 }
 /*---------------------------------------------------------------------------*/
@@ -369,17 +369,17 @@ collect_garbage(int mode)
   struct sector_status stats;
   coffee_page_t first_page, isolation_count;
 
-  PRINTF("Coffee: Running the file system garbage collector in %s mode\n",
-	 mode == GC_RELUCTANT ? "reluctant" : "greedy");
+  PRINTF(("Coffee: Running the file system garbage collector in %s mode\n",
+	 mode == GC_RELUCTANT ? "reluctant" : "greedy"));
   /*
    * The garbage collector erases as many sectors as possible. A sector is
    * erasable if there are only free or obsolete pages in it.
    */
   for(sector = 0; sector < COFFEE_SECTOR_COUNT; sector++) {
     isolation_count = get_sector_status(sector, &stats);
-    PRINTF("Coffee: Sector %u has %u active, %u obsolete, and %u free pages.\n",
+    PRINTF(("Coffee: Sector %u has %u active, %u obsolete, and %u free pages.\n",
         sector, (unsigned)stats.active,
-	(unsigned)stats.obsolete, (unsigned)stats.free);
+	(unsigned)stats.obsolete, (unsigned)stats.free));
 
     if(stats.active > 0) {
       continue;
@@ -397,7 +397,7 @@ collect_garbage(int mode)
       }
 
       COFFEE_ERASE(sector);
-      PRINTF("Coffee: Erased sector %d!\n", sector);
+      PRINTF(("Coffee: Erased sector %d!\n", sector));
 
       if(mode == GC_RELUCTANT && isolation_count > 0) {
         break;
@@ -656,8 +656,8 @@ reserve(const char *name, coffee_page_t pages,
   hdr.flags = HDR_FLAG_ALLOCATED | flags;
   write_header(&hdr, page);
 
-  PRINTF("Coffee: Reserved %u pages starting from %u for file %s\n",
-      pages, page, name);
+  PRINTF(("Coffee: Reserved %u pages starting from %u for file %s\n",
+      pages, page, name));
 
   file = load_file(page, &hdr);
   if(file != NULL) {
@@ -930,7 +930,7 @@ write_log_page(struct file *file, struct log_param *lp)
     log_record = find_next_record(file, log_page, log_records);
     if(log_record >= log_records) {
       /* The log is full; merge the log. */
-      PRINTF("Coffee: Merging the file %s with its log\n", hdr.name);
+      PRINTF(("Coffee: Merging the file %s with its log\n", hdr.name));
       return merge_log(file->page, 0);
     }
   } else {
@@ -939,8 +939,8 @@ write_log_page(struct file *file, struct log_param *lp)
     if(log_page == INVALID_PAGE) {
       return -1;
     }
-    PRINTF("Coffee: Created a log structure for file %s at page %u\n",
-    	hdr.name, (unsigned)log_page);
+    PRINTF(("Coffee: Created a log structure for file %s at page %u\n",
+    	hdr.name, (unsigned)log_page));
     hdr.log_page = log_page;
     log_record = 0;
   }
@@ -1175,7 +1175,7 @@ cfs_write(int fd, const void *buf, unsigned size)
       return -1;
     }
     file = fdp->file;
-    PRINTF("Extended the file at page %u\n", (unsigned)file->page);
+    PRINTF(("Extended the file at page %u\n", (unsigned)file->page));
   }
 #if COFFEE_IO_SEMANTICS
   }
@@ -1339,7 +1339,7 @@ cfs_coffee_format(void)
 {
   unsigned i;
 
-  PRINTF("Coffee: Formatting %u sectors", COFFEE_SECTOR_COUNT);
+  PRINTF(("Coffee: Formatting %u sectors", COFFEE_SECTOR_COUNT));
 
   *next_free = 0;
 

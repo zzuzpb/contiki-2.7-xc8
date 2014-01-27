@@ -42,21 +42,32 @@
 
 #include "sys/process.h"
 
-#if ! CC_NO_VA_ARGS
 #if AUTOSTART_ENABLE
-#define AUTOSTART_PROCESSES(...)					\
-struct process * const autostart_processes[] = {__VA_ARGS__, NULL}
-#else /* AUTOSTART_ENABLE */
-#define AUTOSTART_PROCESSES(...)					\
-extern int _dummy
-#endif /* AUTOSTART_ENABLE */
+
+#define DEBUG 0
+#if DEBUG
+#include <stdio.h>
+#define PRINTF(s) printf(s)
 #else
-#error "C compiler must support __VA_ARGS__ macro"
+#define PRINTF(s)
 #endif
 
-CLIF extern struct process * const autostart_processes[];
 
-void autostart_start(struct process * const processes[]);
-void autostart_exit(struct process * const processes[]);
 
+void autostart_start(struct process * const *processes);
+void autostart_exit(struct process * const *processes);
+
+#define AUTOSTART_START(a) \
+    process_start(a, NULL);\
+    PRINTF(("autostart_start: starting process '%s'\n", (a)->name));
+
+#define AUTOSTART_EXIT(a) \
+    process_exit(a);\
+    PRINTF(("autostart_exit: stopping process '%s'\n", (a)->name));
+
+#else /* AUTOSTART_ENABLE */
+#define AUTOSTART_START(a)
+#define AUTOSTART_EXIT(a)
+
+#endif /* AUTOSTART_ENABLE */
 #endif /* __AUTOSTART_H__ */

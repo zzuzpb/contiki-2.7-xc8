@@ -6,13 +6,13 @@ extern volatile WORD_VAL clock_seconds_correction;
 static volatile uint8_t clock_seconds_ticks = 0;
 
 
-#ifdef __XC8
+#ifdef COMPILER_HITECH_PICC18
 
-void interrupt high_isr(void) @(0xD000) {
+void interrupt high_isr(void)  {
 
 }
 
-void interrupt low_priority low_isr(void) @(0xD800) {
+void interrupt low_priority low_isr(void)  {
     volatile uint16_t tmp;
     if (INTCONbits.TMR0IF && INTCONbits.TMR0IE) {
         dwInternalTicks++;

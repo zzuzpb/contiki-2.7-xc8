@@ -79,18 +79,18 @@ cputc(char c)
   ++cursx;
 }
 /*-----------------------------------------------------------------------------------*/
-void
-cputs(char *str)
-{
-  while(*str != 0) {
-    cputc(*str++);
-  }
-  
-  /*  int i;
-  for(i = 0; i < strlen(str); ++i) {
-    cputc(str[i]);
-    }*/
-}
+//void
+//cputs(char *str)
+//{
+//  while(*str != 0) {
+//    cputc(*str++);
+//  }
+//
+//  /*  int i;
+//  for(i = 0; i < strlen(str); ++i) {
+//    cputc(str[i]);
+//    }*/
+//}
 /*-----------------------------------------------------------------------------------*/
 void
 cclear(unsigned char length)

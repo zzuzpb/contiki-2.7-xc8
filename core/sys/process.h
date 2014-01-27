@@ -323,6 +323,7 @@ struct process {
   PT_THREAD((* thread)(struct pt *, process_event_t, process_data_t));
   struct pt pt;
   unsigned char state, needspoll;
+  unsigned char xc8_aux;
 };
 
 /**

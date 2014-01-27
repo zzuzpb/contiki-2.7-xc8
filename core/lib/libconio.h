@@ -67,7 +67,7 @@ void bordercolor(unsigned char c);
 void screensize(unsigned char *x, unsigned char *y);
 void revers(unsigned char c);
 void cputc(char c);
-void cputs(char *str);
+//void cputs(char *str);
 void cclear(unsigned char length);
 void chline(unsigned char length);
 void cvline(unsigned char length);

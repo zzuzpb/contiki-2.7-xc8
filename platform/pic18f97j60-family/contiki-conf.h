@@ -41,7 +41,7 @@ typedef unsigned short uip_stats_t;
 
 #define MMEM_CONF_SIZE (200u)
 
-#define PROCESS_CONF_NO_PROCESS_NAMES 1
+#define PROCESS_CONF_NO_PROCESS_NAMES 0
 
 #define QUEUEBUF_CONF_NUM (2u)
 #define PACKETBUF_CONF_HDR_SIZE (24u)

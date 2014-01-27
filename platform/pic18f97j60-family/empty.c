@@ -40,5 +40,5 @@ PROCESS_THREAD(init_stack_process, ev, data)
   PROCESS_END();
 }
 /*---------------------------------------------------------------------------*/
-AUTOSTART_PROCESSES(&init_stack_process);
+//AUTOSTART_PROCESSES(&init_stack_process);
 /*---------------------------------------------------------------------------*/

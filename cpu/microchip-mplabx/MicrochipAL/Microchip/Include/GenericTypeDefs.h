@@ -62,16 +62,11 @@
 #include <stddef.h> 
 
 #ifndef _BOOL
-//typedef enum _BOOL { FALSE = 0, TRUE } BOOL;    /* Undefined size */
-typedef unsigned char BOOL;
-#define FALSE (0)
-#define TRUE (1)
+typedef enum _BOOL { FALSE = 0, TRUE } BOOL;    /* Undefined size */
 #define _BOOL _BOOL
 #endif
-//typedef enum _BIT { CLEAR = 0, SET } BIT;
-typedef unsigned char BIT;
-#define CLEAR (0)
-#define SET (1)
+typedef enum _BIT { CLEAR = 0, SET } BIT;
+
 #define PUBLIC                                  /* Function attributes */
 #define PROTECTED
 #define PRIVATE   static

@@ -48,8 +48,8 @@ const struct sensors_sensor name = { type, value, configure, status }
 
 #define SENSORS_NUM (sizeof(sensors) / sizeof(struct sensors_sensor *))
 
-#define SENSORS(...) \
-const struct sensors_sensor *sensors[] = {__VA_ARGS__, NULL};       \
+#define SENSORS(sensors_list) \
+const struct sensors_sensor *sensors[] = sensors_list;       \
 unsigned char sensors_flags[SENSORS_NUM]
 
 struct sensors_sensor {

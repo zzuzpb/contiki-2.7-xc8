@@ -36,49 +36,41 @@
 #include "contiki.h"
 #include <stdio.h>
 
+PROCESS_NAME(init_stack_process);
 
-
-//#include "net/uip.h"
-
-//#include "dev/button-sensor.h"
-//#include "dev/pir-sensor.h"
-//#include "dev/vib-sensor.h"
-
-const struct process *procinit[] = {&etimer_process,  NULL};
-
-
-//const struct sensors_sensor *sensors[]={&pir_sensor, &vib_sensor, &button_sensor,NULL};
+//X macros instead of variadics
+#define PROCINIT_LIST(ENTRY)\
+ENTRY( &etimer_process )\
+ENTRY( &init_stack_process )
 
 /*---------------------------------------------------------------------------*/
 void
-main(void)
-{
-  process_init();
+main(void) {
+    process_init();
 
-  procinit_init();
-  
-  //autostart_start(autostart_processes);
-  
-  //printf("Contiki initiated, now starting process scheduling\n");
-  
-  while(1) {
-    int n;
-    
-    n = process_run();
-    etimer_request_poll();
-  }
-  
+    PROCINIT_LIST(PROCINIT_INIT);
+
+    //autostart_start(autostart_processes);
+
+    //printf("Contiki initiated, now starting process scheduling\n");
+
+    while (1) {
+        int n;
+
+        n = process_run();
+        etimer_request_poll();
+    }
+
 }
+
 /*---------------------------------------------------------------------------*/
-void log_message(char *m1, char *m2)
-{
-  //printf("%s%s\n", m1, m2);
+void log_message(char *m1, char *m2) {
+    //printf("%s%s\n", m1, m2);
 }
 
 void
-uip_log(char *m)
-{
-  //printf("%s\n", m);
+uip_log(char *m) {
+    //printf("%s\n", m);
 }
 
 /*unsigned short
@@ -87,4 +79,4 @@ sensors_light1(void)
   static unsigned short count;
   return count++;
 }
-*/
+ */
